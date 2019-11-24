@@ -5,62 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fiona's To Do List</title>
+    <link href="https://fonts.googleapis.com/css?family=Calistoga|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 
 <body>
+<div class="container">
     <h1>Things To Do Today</h1>
 
-    <form>
-        <input type="text" placeholder="Type Task Here">
-        <button>Add</button>
+    <form id="Add-New-Task">
+        <input class="typeBox" type="text" placeholder="Type Task Here">
+        <button class="addButton">Add</button>
     </form>
 
     <p>
-        Pending tasks to complete: 5
+        Pending tasks to complete: <span>5</span>
     </p>
 
-    <table>
+    <table class="tableCenter">
         <tr>
             <td>
                 Task 1 
             </td>
-            <td>
-                <button>Completed</button>
-                <button>Delete</button>
+            <td class="text-center btncol">
+                <button class="completeButton">Completed</button>
             </td>  
+            <td class="text-center btncol"> 
+                <button class="deleteButton">Delete</button>
+            </td>
         </tr>
         
         <tr>
             <td>
                 Task 2 
             </td>
-            <td>
-                <button>Completed</button>
-                <button>Delete</button>
+            <td class="text-center btncol">
+                <button class="completeButton">Completed</button>
             </td>  
+            <td class="text-center btncol">
+                <button class="deleteButton">Delete</button>
+            </td>
         </tr>
     </table>
-
-    <div>
-        <img src="./docs/HTML_page_structure.jpg" width="600px" height=auto/>
-    </div>
-
-    <h4>Dynamic Parts of the application</h4>
-    
-    <ul>
-        <li>The pending tasks counter</li>
-        <li>The pending task list</li> 
-    </ul>          
-    
-    <h4>Predictive problems with dynamic pieces?</h4>
-    
-    <ul>
-        <li>What happens when the user adds an empty task?</li>
-        <li>Does the task have a word limit or could they write 10,000 characters</li>
-        <li>What order will the tasks go in?</li>
-        <li>Could the same task be added twice?</li>
-    </ul>
-   
+</div>
 </body>
 </html>
