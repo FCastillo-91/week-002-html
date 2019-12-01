@@ -1,0 +1,17 @@
+body {
+    background-color: #f2f2f2;
+}
+
+.jumbotron {
+    background-color: #99d0f5;
+    color: #ffffff;
+}
+
+.no-gutters>.col, .no-gutters>[class*=col-] {
+    padding-right: 1px;
+    padding-left: 1px;
+}
+
+.cardToDoList .btn {
+    font-size: 80%;
+}
